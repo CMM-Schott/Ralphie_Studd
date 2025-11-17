@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chapter 1 – Voidbound Signals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Chapter 1 of Voidbound Signals, a dark sci-fi novel available free online."
+  />
+  <link rel="../assets/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body class="chapter-body">
+  <div class="noise"></div>
+  <header class="site-header">
+    <div class="logo">VOIDBOUND<span>_SIG</span></div>
+    <nav class="main-nav">
+      <a href="../index.html#chapters">Back to Chapters</a>
+      <a href="../index.html#feedback">Send Feedback</a>
+    </nav>
+  </header>
+
+  <main class="chapter-main">
+    <article class="chapter-container">
+      <p class="chapter-label">CHAPTER 01</p>
+      <h1>Signal in the Dark</h1>
+      <p class="chapter-meta">
+        Experimental draft. This chapter may change based on reader feedback.
+      </p>
+
+      <!-- START YOUR CHAPTER TEXT HERE -->
+      <p>
+        The relay station drifted half a million kilometers off its assigned
+        orbit, and nobody had noticed except Mara and the dust.
+      </p>
+
+      <p>
+        On her screen, the network map was a sparse constellation of green
+        dots—colonies, freighters, mining rigs—each one pinging the relay in a
+        slow, patient heartbeat. Traffic through the band was low. Too low.
+      </p>
+
+      <p>
+        She tapped the console, more out of habit than hope. The same thin
+        stream of requests and acknowledgements scrolled by. Status: stable.
+        Status: nominal. Status: alive.
+      </p>
+
+      <p>
+        The station hummed around her: fans, coolant pumps, the soft grind of
+        aging gyros. Outside, there was nothing—no nearby ships, no moonlight,
+        no reflected glow from any planetary disk. Just background stars and the
+        cold noise of the universe.
+      </p>
+
+      <p>
+        Then, under the regular cadence of signals, something new blinked into
+        the log. A packet with no routing data. No origin. No destination.
+      </p>
+
+      <p>
+        Just a timestamp that shouldn’t exist.
+      </p>
+
+      <p>
+        <em>Received: 23:19:04 UTC, 07.14.2249</em>
+      </p>
+
+      <p>
+        Mara frowned. The current year was 2248.
+      </p>
+
+      <!-- END YOUR CHAPTER TEXT HERE -->
+
+      <div class="chapter-nav">
+        <a href="../index.html#chapters" class="btn small ghost">⟵ Back to Chapters</a>
+        <a href="../index.html#feedback" class="btn small">Send Feedback on CH01</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Voidbound Signals · Experimental Online Edition</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
