@@ -11,50 +11,35 @@
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <div class="noise"></div>
   <header class="site-header">
-    <div class="logo">VOIDBOUND<span>_SIG</span></div>
-    <nav class="main-nav">
-      <a href="#about">About</a>
-      <a href="#chapters">Chapters</a>
-      <a href="#feedback">Feedback</a>
-    </nav>
+    <div class="site-header-inner">
+      <div class="logo">VOIDBOUND_SIG</div>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#chapters">Chapters</a>
+        <a href="#feedback">Feedback</a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-content">
-        <p class="tagline">A FREE DARK SCI-FI SERIAL</p>
-        <h1>Voidbound Signals</h1>
-        <p class="hero-text">
-          Deep in the dead space between colonies, a ghost signal wakes up
-          something that was never meant to answer. The first crew to hear it
-          won’t be the last.
-        </p>
-        <div class="hero-actions">
-          <a href="#chapters" class="btn primary">Start Reading</a>
-          <a href="#feedback" class="btn ghost">Send Feedback</a>
-        </div>
-      </div>
-      <div class="hero-side">
-        <div class="data-card">
-          <p class="data-label">STATUS</p>
-          <p class="data-value online">LIVE TRANSMISSION</p>
-        </div>
-        <div class="data-card">
-          <p class="data-label">FORMAT</p>
-          <p class="data-value">Free Online Novel</p>
-        </div>
-        <div class="data-card">
-          <p class="data-label">GENRE</p>
-          <p class="data-value">Dark Sci-Fi / Horror</p>
-        </div>
+      <p class="tagline">A FREE DARK SCI-FI SERIAL</p>
+      <h1 class="hero-title">Voidbound Signals</h1>
+      <p class="hero-text">
+        Deep in the dead space between colonies, a ghost signal wakes up
+        something that was never meant to answer. The first crew to hear it
+        won’t be the last.
+      </p>
+      <div class="hero-actions">
+        <a href="#chapters" class="btn small">Start Reading</a>
+        <a href="#feedback" class="btn small">Send Feedback</a>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="panel">
+    <section id="about">
       <h2>About the Story</h2>
       <p>
         This is an experimental release of a dark sci-fi novel, offered free
@@ -69,82 +54,67 @@
     </section>
 
     <!-- CHAPTERS -->
-    <section id="chapters" class="panel">
-      <div class="panel-header">
-        <h2>Chapters</h2>
-        <p class="panel-subtitle">
-          Released gradually. Check back for new transmissions.
-        </p>
-      </div>
+    <section id="chapters">
+      <h2>Chapters</h2>
+      <p>Released gradually. Check back for new chapters.</p>
 
-      <div class="chapter-grid">
-        <!-- Chapter 1 Card -->
-        <article class="chapter-card">
-          <p class="chapter-label">CHAPTER 01</p>
-          <h3>Signal in the Dark</h3>
+      <ul class="chapter-list">
+        <!-- Chapter 1 -->
+        <li class="chapter-item">
+          <div class="chapter-label">CHAPTER 01</div>
+          <div class="chapter-title">Signal in the Dark</div>
           <p class="chapter-blurb">
             A bored relay technician picks up an impossible echo in the
             intercolonial network—dated from a year after her own death.
           </p>
           <a href="chapters/chapter-1.html" class="btn small">Read Chapter</a>
-        </article>
+        </li>
 
-        <!-- Placeholder cards for future chapters -->
-        <article class="chapter-card disabled">
-          <p class="chapter-label">CHAPTER 02</p>
-          <h3>Incoming // Pending</h3>
+        <!-- Future Chapter 2 -->
+        <li class="chapter-item disabled">
+          <div class="chapter-label">CHAPTER 02</div>
+          <div class="chapter-title">Incoming // Pending</div>
           <p class="chapter-blurb">
             This chapter hasn’t been released yet. Once it’s live, the link will
             activate here.
           </p>
-          <button class="btn small disabled-btn" disabled>Locked</button>
-        </article>
+          <span class="btn small disabled-btn">Locked</span>
+        </li>
 
-        <article class="chapter-card disabled">
-          <p class="chapter-label">CHAPTER 03</p>
-          <h3>Incoming // Pending</h3>
+        <!-- Future Chapter 3 -->
+        <li class="chapter-item disabled">
+          <div class="chapter-label">CHAPTER 03</div>
+          <div class="chapter-title">Incoming // Pending</div>
           <p class="chapter-blurb">
             More transmissions will be added as the story continues to evolve.
           </p>
-          <button class="btn small disabled-btn" disabled>Locked</button>
-        </article>
-      </div>
+          <span class="btn small disabled-btn">Locked</span>
+        </li>
+      </ul>
     </section>
 
     <!-- FEEDBACK -->
-    <section id="feedback" class="panel panel-split">
-      <div>
-        <h2>Send Feedback</h2>
-        <p>
-          Found a typo, a broken piece of science, or a character choice that
-          hit way too hard? I’m collecting all reader feedback during this
-          experimental release.
-        </p>
-        <p>
-          You can email your thoughts, critiques, or reactions directly. Short
-          or long. One line or pages of notes. Everything helps.
-        </p>
-        <p class="email-callout">
-          Email: <a href="mailto:voidboundsignals.feedback@example.com">voidboundsignals.feedback@example.com</a>
-        </p>
-        <p class="hint">
-          Tip: If you’re commenting on a specific chapter, mention the chapter
-          number in your subject line (e.g. <code>CH01 feedback</code>).
-        </p>
-      </div>
-      <div class="feedback-side">
-        <div class="data-card">
-          <p class="data-label">WHY FREE?</p>
-          <p class="data-value">
-            This phase is about story testing, not sales. If the book gains
-            traction, a revised edition will be fully published later.
-          </p>
-        </div>
-        <div class="data-card">
-          <p class="data-label">YOU</p>
-          <p class="data-value">Early access reader, timeline 01.</p>
-        </div>
-      </div>
+    <section id="feedback">
+      <h2>Send Feedback</h2>
+      <p>
+        Found a typo, a broken piece of science, or a character choice that
+        hit way too hard? I’m collecting all reader feedback during this
+        experimental release.
+      </p>
+      <p>
+        You can email your thoughts, critiques, or reactions directly. Short
+        or long. One line or pages of notes. Everything helps.
+      </p>
+      <p class="email-callout">
+        Email:
+        <a href="mailto:voidboundsignals.feedback@example.com">
+          voidboundsignals.feedback@example.com
+        </a>
+      </p>
+      <p>
+        Tip: If you’re commenting on a specific chapter, mention the chapter
+        number in your subject line (e.g. <code>CH01 feedback</code>).
+      </p>
     </section>
   </main>
 
@@ -153,7 +123,6 @@
   </footer>
 
   <script>
-    // Set current year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
