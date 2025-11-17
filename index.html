@@ -95,26 +95,42 @@
 
     <!-- FEEDBACK -->
     <section id="feedback">
-      <h2>Send Feedback</h2>
-      <p>
-        Found a typo, a broken piece of science, or a character choice that
-        hit way too hard? I’m collecting all reader feedback during this
-        experimental release.
-      </p>
-      <p>
-        You can email your thoughts, critiques, or reactions directly. Short
-        or long. One line or pages of notes. Everything helps.
-      </p>
-      <p class="email-callout">
-        Email:
-        <a href="mailto:voidboundsignals.feedback@example.com">
-          voidboundsignals.feedback@example.com
-        </a>
-      </p>
-      <p>
-        Tip: If you’re commenting on a specific chapter, mention the chapter
-        number in your subject line (e.g. <code>CH01 feedback</code>).
-      </p>
+     <h2>Send Feedback</h2>
+  <p>
+    You can send feedback directly below. Your message can be anonymous,
+    or you can leave an email if you want a reply.
+  </p>
+
+  <form
+    action="https://formspree.io/f/abcdwxyz"  <!-- replace with your Formspree URL -->
+    method="POST"
+    class="feedback-form"
+  >
+    <label for="message">Your feedback (required)</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="6"
+      required
+    ></textarea>
+
+    <label for="email">Email (optional, if you want a reply)</label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      placeholder="you@example.com"
+    />
+
+    <button type="submit" class="btn">Send Feedback</button>
+  </form>
+
+  <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #555;">
+    You can also email me directly at
+    <a href="mailto:voidboundsignals.feedback@example.com">
+      voidboundsignals.feedback@example.com
+    </a>.
+  </p>
     </section>
   </main>
 
@@ -127,3 +143,4 @@
   </script>
 </body>
 </html>
+
