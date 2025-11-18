@@ -15,8 +15,17 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 17px;
   line-height: 1.7;
-  background: #ffffff;
+  background: #fafafa; /* soft page background */
   color: #111111;
+}
+
+/* MAIN CONTENT COLUMN WRAPPER */
+.page-wrapper {
+  max-width: 840px;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  border: 1px solid #e5eaf5; /* Freeze Purple border */
+  background: #ffffff;
 }
 
 main {
@@ -75,9 +84,11 @@ h1 {
   margin-bottom: 0.75rem;
 }
 
-h2 {
+/* subtle purple accent for section titles */
+h2,
+h3 {
   font-size: 1.3rem;
-  margin-top: 2rem;
+  color: #8458B3; /* Purple Pain */
 }
 
 p {
@@ -154,6 +165,9 @@ a:hover {
 
 section {
   margin-top: 2rem;
+  padding-bottom: 1.75rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5eaf5; /* Freeze Purple section divider */
 }
 
 /* CHAPTER LIST */
@@ -203,7 +217,8 @@ section {
   text-align: center;
 }
 
-/* RESPONSIVE */
+/* FEEDBACK FORM */
+
 .feedback-form {
   margin-top: 1rem;
   max-width: 640px;
@@ -236,8 +251,9 @@ section {
 }
 
 /* MAILING LIST CARD */
+
 .mailing-card {
-  border: 1px solid #cccccc;
+  border: 1px solid #e5eaf5; /* updated to Freeze Purple */
   padding: 1.25rem 1rem;
   margin-top: 1.5rem;
   max-width: 680px;
@@ -262,12 +278,20 @@ section {
   border: 1px solid #eeeeee;
 }
 
+/* RESPONSIVE */
 
 @media (max-width: 600px) {
+  .page-wrapper {
+    padding: 1.25rem 1.25rem;
+    margin: 1rem;
+  }
+
   .site-header-inner {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  main {
+    padding: 1.5rem 0.25rem 2.5rem;
+  }
 }
-
-
