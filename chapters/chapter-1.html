@@ -3,12 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <title>Chapter 1 – Voidbound Signals</title>
-  <p class="download-box">
-  Download this chapter for your e-reader:
-  <a href="chapter-1.epub">EPUB</a>
-  ·
-  <a href="chapter-1.pdf">PDF</a>
-</p>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
@@ -23,6 +17,9 @@
       <nav class="main-nav">
         <a href="../index.html#chapters">Chapters</a>
         <a href="../index.html#feedback">Feedback</a>
+        <button type="button" class="theme-toggle" id="themeToggle">
+          Dark mode
+        </button>
       </nav>
     </div>
   </header>
@@ -35,6 +32,12 @@
         Experimental draft. This chapter may change based on reader feedback.
       </p>
     </header>
+
+    <p class="download-box">
+      Download this chapter for your e-reader:
+      <a href="chapter-1.epub" download>EPUB</a> ·
+      <a href="chapter-1.pdf" download>PDF</a>
+    </p>
 
     <!-- START YOUR CHAPTER TEXT HERE -->
     <p>
@@ -88,8 +91,38 @@
   </footer>
 
   <script>
+    // Set footer year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Light/Dark theme toggle with persistence
+    (function () {
+      const body = document.body;
+      const toggle = document.getElementById("themeToggle");
+
+      // Load saved theme
+      const storedTheme = localStorage.getItem("theme");
+      if (storedTheme === "dark") {
+        body.classList.add("dark-theme");
+      }
+
+      function updateLabel() {
+        const isDark = body.classList.contains("dark-theme");
+        if (toggle) {
+          toggle.textContent = isDark ? "Light mode" : "Dark mode";
+        }
+      }
+
+      updateLabel();
+
+      if (toggle) {
+        toggle.addEventListener("click", function () {
+          body.classList.toggle("dark-theme");
+          const isDark = body.classList.contains("dark-theme");
+          localStorage.setItem("theme", isDark ? "dark" : "light");
+          updateLabel();
+        });
+      }
+    })();
   </script>
 </body>
 </html>
-
