@@ -235,10 +235,39 @@ section {
   margin-top: 0.9rem;
 }
 
+/* MAILING LIST CARD */
+.mailing-card {
+  border: 1px solid #cccccc;
+  padding: 1.25rem 1rem;
+  margin-top: 1.5rem;
+  max-width: 680px;
+  background: #fafafa;
+}
+
+.mailing-card h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.mailing-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: #333333;
+}
+
+.mailing-card iframe {
+  width: 100%;
+  border: 1px solid #eeeeee;
+}
+
+
 @media (max-width: 600px) {
   .site-header-inner {
     flex-direction: column;
     align-items: flex-start;
   }
 }
+
 
