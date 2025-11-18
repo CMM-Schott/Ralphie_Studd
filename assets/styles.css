@@ -295,3 +295,16 @@ section {
     padding: 1.5rem 0.25rem 2.5rem;
   }
 }
+.download-box {
+  padding: 0.5rem 0.75rem;
+  margin: 0 0 1.5rem;
+  border: 1px solid #e5eaf5; /* Freeze Purple */
+  background: #fafafa;
+  font-size: 0.9rem;
+}
+
+.download-box a {
+  text-decoration: underline;
+  margin: 0 0.1rem;
+}
+
