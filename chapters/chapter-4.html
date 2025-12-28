@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The World's Changing – Secrets of the Minds</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="UPDATE CHAPTER NAME of Secrets of the Minds, a dark sci-fi novel available free online."
+  />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body class="chapter-page">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="logo">SECRETS_OF_THE_MINDS</div>
+      <nav class="main-nav">
+        <a href="../index.html#chapters">Chapters</a>
+        <a href="../index.html#feedback">Feedback</a>
+        <button type="button" class="theme-toggle" id="themeToggle">
+          Dark mode
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="chapter-header">
+      <div class="chapter-label-line">Chapter 4</div>
+      <h1>The World's Changing</h1>
+      <p class="chapter-meta">
+        Experimental draft. This chapter may change.
+      </p>
+    </header>
+
+    <p class="download-box">
+      (COMING SOON) Download this chapter for your e-reader:
+      <a href="chapter-1.epub" download>EPUB</a> ·
+      <a href="chapter-1.pdf" download>PDF</a>
+    </p>
+
+    <!-- START YOUR CHAPTER TEXT HERE -->
+
+    <!-- END YOUR CHAPTER TEXT HERE -->
+
+    <div class="chapter-nav">
+      <a href="../index.html#chapters" class="btn small">← Back to Chapters</a>
+      <a href="../index.html#feedback" class="btn small">Send Feedback on CH01</a>
+    </div>
+          <!-- Mailing list signup -->
+    <div class="mailing-card">
+      <h3>Get new chapters by email</h3>
+      <p>Subscribe to get future chapters and updates.</p>
+
+      <iframe 
+        src="https://cianmatthewsschott.substack.com/embed"
+        width="100%"
+        height="230"
+        style="background:white;"
+        frameborder="0"
+        scrolling="no">
+      </iframe>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Secrets of the Minds · Experimental Online Edition</p>
+  </footer>
+
+  <script>
+    // Set footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Light/Dark theme toggle with persistence
+    (function () {
+      const body = document.body;
+      const toggle = document.getElementById("themeToggle");
+
+      // Load saved theme
+      const storedTheme = localStorage.getItem("theme");
+      if (storedTheme === "dark") {
+        body.classList.add("dark-theme");
+      }
+
+      function updateLabel() {
+        const isDark = body.classList.contains("dark-theme");
+        if (toggle) {
+          toggle.textContent = isDark ? "Light mode" : "Dark mode";
+        }
+      }
+
+      updateLabel();
+
+      if (toggle) {
+        toggle.addEventListener("click", function () {
+          body.classList.toggle("dark-theme");
+          const isDark = body.classList.contains("dark-theme");
+          localStorage.setItem("theme", isDark ? "dark" : "light");
+          updateLabel();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
+
+
